@@ -301,6 +301,14 @@ void VulkanEngine::init_pipelines()
 	{
 		std::cout << "Triangle vertex shader successfully loaded" << std::endl;
 	}
+
+	//build the pipeline layout that controls the inputs/outputs of the shader
+	//we are not using descriptor sets or other systems yet, so no need to use anything other than empty default
+	VkPipelineLayoutCreateInfo pipeline_layout_info = vkinit::pipeline_layout_create_info();
+
+	VK_CHECK(vkCreatePipelineLayout(_device, &pipeline_layout_info, nullptr, &_trianglePipelineLayout));
+
+	
 }
 
 void VulkanEngine::cleanup()

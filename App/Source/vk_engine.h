@@ -54,6 +54,10 @@ public:
 
     VkSemaphore _presentSemaphore, _renderSemaphore;
 	VkFence _renderFence;
+
+	VkPipelineLayout _trianglePipelineLayout;
+
+	VkPipeline _trianglePipeline;
 private:
     void init_vulkan();
     void init_swapchain();
