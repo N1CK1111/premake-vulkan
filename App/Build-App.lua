@@ -8,7 +8,11 @@ project "Engine"
     targetdir "bin/%{cfg.buildcfg}"
     staticruntime "on"
 
-    files { "Source/**.h", "Source/**.cpp" }
+    files 
+    {
+        "Source/*.h", 
+        "Source/*.cpp" 
+    }
 
     includedirs
     {

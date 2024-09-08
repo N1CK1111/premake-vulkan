@@ -40,14 +40,14 @@ VkPipelineShaderStageCreateInfo vkinit::pipeline_shader_stage_create_info(VkShad
 
 VkPipelineVertexInputStateCreateInfo vkinit::vertex_input_state_create_info()
 {
-		VkPipelineVertexInputStateCreateInfo info = {};
-		info.sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO;
-		info.pNext = nullptr;
+	VkPipelineVertexInputStateCreateInfo info = {};
+	info.sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO;
+	info.pNext = nullptr;
 
-		//no vertex bindings or attributes
-		info.vertexBindingDescriptionCount = 0;
-		info.vertexAttributeDescriptionCount = 0;
-		return info;
+	//no vertex bindings or attributes
+	info.vertexBindingDescriptionCount = 0;
+	info.vertexAttributeDescriptionCount = 0;
+	return info;
 }
 
 VkPipelineInputAssemblyStateCreateInfo vkinit::input_assembly_create_info(VkPrimitiveTopology topology)
