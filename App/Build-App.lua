@@ -53,9 +53,9 @@ project "Engine"
 
         "mkdir -p %{cfg.buildtarget.directory}/shaders",
 
-        "find ../shaders -name '*.frag' -exec sh -c 'glslangValidator -V \"{}\" -o " .. OutputDir .. "/shaders/\"$(basename {})\".spv' \\;",
+        "find ../shaders -name '*.frag' -exec sh -c 'glslangValidator -V \"{}\" -o %{cfg.buildtarget.directory}/shaders/\"$(basename {})\".spv' \\;",
 
-        "find ../shaders -name '*.vert' -exec sh -c 'glslangValidator -V \"{}\" -o " .. OutputDir .. "/shaders/\"$(basename {})\".spv' \\;"
+        "find ../shaders -name '*.vert' -exec sh -c 'glslangValidator -V \"{}\" -o %{cfg.buildtarget.directory}/shaders/\"$(basename {})\".spv' \\;"
     }
 
     filter "system:windows"
