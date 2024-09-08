@@ -14,4 +14,5 @@ namespace vkinit {
     VkPipelineRasterizationStateCreateInfo vkinit::rasterization_state_create_info(VkPolygonMode polygonMode);
     VkPipelineMultisampleStateCreateInfo vkinit::multisampling_state_create_info();
     VkPipelineColorBlendAttachmentState vkinit::color_blend_attachment_state();
+    VkPipelineLayoutCreateInfo vkinit::pipeline_layout_create_info();
 }
