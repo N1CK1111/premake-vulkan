@@ -9,4 +9,9 @@ namespace vkinit {
 
     // Shader pipeline stuff
     VkPipelineShaderStageCreateInfo vkinit::pipeline_shader_stage_create_info(VkShaderStageFlagBits stage, VkShaderModule shaderModule);
+    VkPipelineVertexInputStateCreateInfo vkinit::vertex_input_state_create_info();
+    VkPipelineInputAssemblyStateCreateInfo vkinit::input_assembly_create_info(VkPrimitiveTopology topology);
+    VkPipelineRasterizationStateCreateInfo vkinit::rasterization_state_create_info(VkPolygonMode polygonMode);
+    VkPipelineMultisampleStateCreateInfo vkinit::multisampling_state_create_info();
+    VkPipelineColorBlendAttachmentState vkinit::color_blend_attachment_state();
 }
