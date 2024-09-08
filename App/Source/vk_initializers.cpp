@@ -37,27 +37,3 @@ VkPipelineShaderStageCreateInfo vkinit::pipeline_shader_stage_create_info(VkShad
 	info.pName = "main";
 	return info;
 }
-
-VkPipelineVertexInputStateCreateInfo vkinit::vertex_input_state_create_info()
-{
-	VkPipelineVertexInputStateCreateInfo info = {};
-	info.sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO;
-	info.pNext = nullptr;
-
-	//no vertex bindings or attributes
-	info.vertexBindingDescriptionCount = 0;
-	info.vertexAttributeDescriptionCount = 0;
-	return info;
-}
-
-VkPipelineInputAssemblyStateCreateInfo vkinit::input_assembly_create_info(VkPrimitiveTopology topology)
-{
-	VkPipelineInputAssemblyStateCreateInfo info = {};
-	info.sType = VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO;
-	info.pNext = nullptr;
-
-	info.topology = topology;
-	//we are not going to use primitive restart on the entire tutorial so leave it on false
-	info.primitiveRestartEnable = VK_FALSE;
-	return info;
-}
