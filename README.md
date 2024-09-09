@@ -1,7 +1,7 @@
 
 # Premake & Vulkan
 
-This project aims to allow vblanco20-1's Vulkan guide to be built with MSYS2 and premake.
+This project aims to allow vblanco20-1's legacy Vulkan guide to be built with MSYS2 and premake.
 ## Building
 
 Install MSYS2 from https://www.msys2.org/
