@@ -24,6 +24,6 @@ pacman -S mingw-w64-x86_64-glslang
 ```
 Once you have installed the required packages simply run the command below in the root project directory
 ```bash
-vendor\Binaries\Premake\Windows\premake5.exe --file=Build.lua gmake2
+./vendor/Binaries/Premake/Windows/premake5.exe --file=Build.lua gmake2
 ```
 After creating the Makefiles with gmake2 run ```make``` in the root project directory.
