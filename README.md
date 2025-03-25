@@ -8,19 +8,11 @@ Install MSYS2 from https://www.msys2.org/
 Then download the required packages for mingw-w64-x86_64
 
 ```bash
-pacman -S make
-```
-```bash
-pacman -S mingw-w64-x86_64-toolchain
-```
-```bash
-pacman -S mingw-w64-x86_64-vulkan-devel
-```
-```bash
-pacman -S mingw-w64-x86_64-SDL2
-```
-```bash
-pacman -S mingw-w64-x86_64-glslang
+pacman -S make \
+  mingw-w64-x86_64-toolchain \
+  mingw-w64-x86_64-vulkan-devel \
+  mingw-w64-x86_64-SDL2 \
+  mingw-w64-x86_64-glslang 
 ```
 Once you have installed the required packages simply run the command below in the root project directory
 ```bash
